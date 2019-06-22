@@ -73,19 +73,19 @@ print(imdb)
 #
 #
 # 预处理，去停用词和去标点符号
-def preprocess():
-    seq = []
-    seqtence = []
-    stop_words = set(stopwords.words('english'))
-    for con in content:
-        words = nltk.word_tokenize(con)
-        line = []
-        for word in words:
-            if word.isalpha() and word not in stop_words:
-                line.append(word)
-        seq.append(line)
-        seqtence.extend(line)
-
+# def preprocess():
+#     seq = []
+#     seqtence = []
+#     stop_words = set(stopwords.words('english'))
+#     for con in content:
+#         words = nltk.word_tokenize(con)
+#         line = []
+#         for word in words:
+#             if word.isalpha() and word not in stop_words:
+#                 line.append(word)
+#         seq.append(line)
+#         seqtence.extend(line)
+#
 #
 # combine_train_data(train_pos_path, train_neg_path)
 # load_train_data()
