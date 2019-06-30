@@ -16,7 +16,7 @@ from sklearn.naive_bayes import MultinomialNB
 #preprocess用于将一个文本文档进行切词，并以字符串形式输出切词结果
 def preprocess(path_name):
     text_with_spaces=""
-    textfile=open(path_name,"r",encoding="gbk").read()
+    textfile=open(path_name,"r",encoding="utf8").read()
     textcut=jieba.cut(textfile)
     for word in textcut:
         text_with_spaces+=word+" "
